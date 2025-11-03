@@ -5,6 +5,7 @@
  font-size: 28px;
  padding: 20px;
  margin: 28px;
+ border: 1px solid black;
  }
 
  .card {
