@@ -17,10 +17,11 @@ body {
 main {
     max-width: 1550px;
     width: 100%;
-    padding: 15px;
+    padding: 25px;
     border: 5px solid #605e5e;
     text-align: justify;
-    align-items:center
+    align-items:center;
+    margin: 24px;
     
 }
 
@@ -65,16 +66,16 @@ color:#605e5e;
 
 .nav {
  position: fixed;
-  top: 24px;
-  left: 24px;
-  right: 150px;
-  background-color: #605e5e;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #868686;
    box-shadow: 0 4px 8px #3e3b3b;
 }
 .nav ul {
   list-style: none;
-  margin: 5;
-  padding: 10;
+  margin: 24;
+  padding: 32;
   display: flex;
   gap: 24px;
 }
@@ -85,9 +86,10 @@ color:#605e5e;
 
 .nav a {
 display: block;
-  padding: 12px 0;
-  color: #82e56c;
-   border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 12px;
+  margin: 6px;
+  color: #f13726;
+ 
   transition: color 0.25s ease;
 }
 .nav a:hover {
@@ -96,5 +98,85 @@ display: block;
 .nav+main {
   margin-top: 65px;
 }
+.project-grid {
+    margin: 48px 0;
+    text-align: right;
+    flex-direction:column;
+    justify-content:center;
+    justify-content:space-between
+}
 
+.project-card {
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1; 
+    flex-shrink: 1;
+    flex-basis: 300px
+}
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin-bottom: 16px;
+    align:center;
+
+}
+
+img{
+  background-color: #848399;
+  
+  transition: background-color 0.5s;  
+}
+img:hover {
+  background-color: rgb(255, 255, 255);
+}
+.project-card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    text-align: center;
+}
+h2{
+  background-color: #848399;
+  
+  transition: background-color 0.5s;  
+}
+h2:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.project-card .details {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
+.project-card .description {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  color: rgb(8, 8, 8);
+
+}
+ @media (width >= 480px) { 
+     .projects-card {
+    
+    flex-basis: 45%;
+  }
+ }
+ @media (width >= 1024px) { 
+     .projects-card {
+   
+    flex-basis: 30%;
+  }
+ }
 
